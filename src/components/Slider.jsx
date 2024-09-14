@@ -5,7 +5,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Hero from "./Hero";
-import VirtualCraftersBanner from "./VirtualCraftersBanner";
+import ClipOne from "./ClipOne";
 import WebD from "./WebD";
 import { Carousel } from "flowbite-react";
 
@@ -17,7 +17,7 @@ const Silder = () => {
       <Carousel pauseOnHover>
         <Hero
         />
-        <VirtualCraftersBanner
+        <ClipOne
         />
           
       </Carousel>
