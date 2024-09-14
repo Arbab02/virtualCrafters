@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container mx-auto flex px-5 pt-20 items-center justify-center flex-col">
         <div className="text-center lg:w-2/3 w-full">
           <h1 className="text-5xl font-extrabold mb-6 text-gray-300">
-            Empowering Your Business with Cutthing-Edge Solutions!
+            Empowering Your Business with Cutting-Edge Solutions!
           </h1>
           <p className="text-2xl leading-relaxed mb-6">
           At Our Company (Virtual Crafters), We know how important it is to get the perfect shot for you and your clients.
