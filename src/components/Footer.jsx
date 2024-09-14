@@ -23,8 +23,9 @@ const Footer = () => {
         </div>
         <div>
           <h3 className="text-lg font-bold mb-4">Contact Us</h3>
-          <p className="mb-2">Email: info@gct.com</p>
-          <p className="mb-2">Phone: +123 456 7890</p>
+          <p className="mb-2">Email:  info@virtualcrafterstek.com</p>
+          <p className="mb-2">Phone: +1 580 215 4325</p>
+          <p className="mb-2">Address: SURREY. Province: BC. Area Code: 604.</p>
           <div className="flex space-x-4 mt-4">
             <a href="#" className="hover:text-gray-400">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
