@@ -49,7 +49,7 @@ const Navbar = () => {
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.3 }}
         >
-        abc@gmail.com
+         info@virtualcrafterstek.com
           
         </motion.button>
       </div>
