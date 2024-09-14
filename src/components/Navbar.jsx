@@ -41,7 +41,7 @@ const Navbar = () => {
           <Link className="lg:text-xl mr-[-2rem] hover:text-purple-400 transition duration-300" href="/Contact">Contact Us</Link>
         </motion.nav>
 
-        <motion.button 
+        <Link href="info@virtualcrafterstek.com"><motion.button 
           className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0 transition duration-300"
           initial={{ scale: 0.9 }}
           animate={{ scale: 1 }}
@@ -51,7 +51,7 @@ const Navbar = () => {
         >
          info@virtualcrafterstek.com
           
-        </motion.button>
+        </motion.button></Link>
       </div>
     </motion.header>
   );
