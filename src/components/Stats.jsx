@@ -13,7 +13,7 @@ const Stats = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="sm:text-3xl lg:text-5xl font-bold  title-font mb-4 text-gray-300">
+          <h1 className="text-5xl font-bold title-font mb-4 text-gray-300">
             Our Statistics
           </h1>
     
