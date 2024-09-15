@@ -8,7 +8,7 @@ const LogoPricing = () => {
       <div className="container px-5 pb-8 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           
-          <h2 className="sm:text-4xl lg:text-4xl font-extrabold title-font mb-4 mt-5 ">Logo Designing</h2>
+          <h2 className="text-5xl font-extrabold title-font mb-4 mt-5 ">Logo Designing</h2>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.
           </p>
