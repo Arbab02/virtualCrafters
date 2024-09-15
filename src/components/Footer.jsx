@@ -7,7 +7,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4">About Us</h3>
           <p>
-            We are a leading Technical College high-quality courses
+            We are a leading Technical company offering services
             tailored to your needs. Our commitment is to deliver the best
             services to our customers.
           </p>
