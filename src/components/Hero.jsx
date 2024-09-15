@@ -22,8 +22,8 @@ const Hero = () => {
         <Image
           className="banner mt-2 lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
           src="/images/banner.png"
-          width={620}
-          height={620}
+          width={700}
+          height={700}
           alt="Logo"
         />
       </div>
