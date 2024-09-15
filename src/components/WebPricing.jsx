@@ -7,7 +7,7 @@ const WebPricing = () => {
     <section className="text-gray-400 bg-[#000319] body-font overflow-hidden">
       <div className="container px-5 pb-8 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
-          <h1 className="sm:text-4xl lg:text-5xl font-extrabold title-font my-4 ">Services</h1>
+          <h1 className="text-5xl font-extrabold title-font my-4 ">Services</h1>
           <h2 className="sm:text-4xl lg:text-4xl font-extrabold title-font mb-4 mt-5 ">Web Design & Development</h2>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.
