@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto px-6 sm:px-8 md:px-12 lg:px-16 text-center mt-8">
-        <p>&copy; 2024 G.C.T. All rights reserved.</p>
+        <p>&copy; 2024 Virtual Crafters. All rights reserved.</p>
       </div>
     </footer>
   );
