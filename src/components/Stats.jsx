@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion';
-import { FaGlobe, FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaGlobe, FaFacebook, FaInstagramSquare, FaLinkedin } from 'react-icons/fa';
 
 const Stats = () => {
   return (
@@ -17,12 +17,12 @@ const Stats = () => {
             Our Statistics
           </h1>
         </motion.div>
-        <div className="flex flex-wrap font-semibold -m-4 text-center">
+        <div className="flex flex-wrap font-medium -m-4 text-center">
           {[
-            { id: 1, value: '1k/monthly', label: 'Visiters', icon: <FaGlobe className="text-indigo-400 w-12 h-12 mb-3 inline-block" /> },
-            { id: 2, value: '6K', label: 'Followers', icon: <FaFacebookF className="text-indigo-400 w-12 h-12 mb-3 inline-block" /> },
-            { id: 3, value: '5k', label: 'Followers', icon: <FaInstagram className="text-indigo-400 w-12 h-12 mb-3 inline-block" /> },
-            { id: 4, value: '10k', label: 'Followers', icon: <FaLinkedinIn className="text-indigo-400 w-12 h-12 mb-3 inline-block" /> },
+            { id: 1, value: '1k per month', label: 'Visiters', icon: <FaGlobe className="text-indigo-400 w-12 h-12 mb-3 inline-block" /> },
+            { id: 2, value: '6K', label: 'Followers', icon: <FaFacebook className="text-indigo-400 w-12 h-12 mb-3 inline-block" /> },
+            { id: 3, value: '5k', label: 'Followers', icon: <FaInstagramSquare className="text-indigo-400 w-12 h-12 mb-3 inline-block" /> },
+            { id: 4, value: '10k', label: 'Followers', icon: <FaLinkedin className="text-indigo-400 w-12 h-12 mb-3 inline-block" /> },
           ].map((stat, index) => (
             <motion.div
               className="p-4 md:w-1/4 sm:w-1/2 w-full"
