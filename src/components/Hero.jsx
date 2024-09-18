@@ -14,7 +14,7 @@ const Hero = () => {
           At Our Company (Virtual Crafters), We know how important it is to get the perfect shot for you and your clients.
           </p>
           <div className="flex justify-center">
-            <Link href="mailto:info@virtualcrafterstek.com"><button className="ml-4 mb-4 inline-flex text-black bg-gray-300 border-0 py-3 px-14 focus:outline-none  rounded-3xl text-lg">
+            <Link href="mailto:info@virtualcrafterstek.com"><button className="ml-4 mb-4 inline-flex text-black bg-gray-300 border-0 py-2 px-14 focus:outline-none  rounded-3xl text-lg">
              Free Consultation
             </button></Link>
           </div>
