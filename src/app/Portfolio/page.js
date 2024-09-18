@@ -7,22 +7,22 @@ const services = [
   {
     icon: <FaBullhorn size={40} />,
     title: 'Digital Marketing',
-    description: 'In order to improve your online presence and generate results, Synctal Solutions provides a full range of digital marketing services. Our knowledgeable team has expertise in content creation, social media marketing, PPC advertising, SEO, and more. We customize our services to your unique needs, assisting you in productively reaching and engaging your target audience while maximizing your online visibility and return on investment.'
+    description: 'In order to improve your online presence and generate results, Virtual Crafters provides a full range of digital marketing services. Our knowledgeable team has expertise in content creation, social media marketing, PPC advertising, SEO, and more. We customize our services to your unique needs, assisting you in productively reaching and engaging your target audience while maximizing your online visibility and return on investment.'
   },
   {
     icon: <FaPencilRuler size={40} />,
     title: 'Animation',
-    description: 'At Synctal Solutions, our mission is to create highly effective and tailored animation plans that align with your business goals. Our expertise lies in producing captivating 2D and 3D animations that leave a lasting impression on your audience. From animating existing logos to crafting entirely new ones, our creative solutions ensure your brand stands out.'
+    description: 'At Virtual Crafters, our mission is to create highly effective and tailored animation plans that align with your business goals. Our expertise lies in producing captivating 2D and 3D animations that leave a lasting impression on your audience. From animating existing logos to crafting entirely new ones, our creative solutions ensure your brand stands out.'
   },
   {
     icon: <FaPaintBrush size={40} />,
     title: 'Graphic Designing',
-    description: 'Synctal Solutions offers innovative graphic design solutions that elevate your brand\'s visual identity. Our creative team specializes in animated logos that truly make your company stand out. Whether it\'s a fresh logo design or an animated version of your existing one, we ensure your brand resonates with your target audience through captivating visuals.'
+    description: 'Virtual Crafters offers innovative graphic design solutions that elevate your brand\'s visual identity. Our creative team specializes in animated logos that truly make your company stand out. Whether it\'s a fresh logo design or an animated version of your existing one, we ensure your brand resonates with your target audience through captivating visuals.'
   },
   {
     icon: <FaFileAlt size={40} />,
     title: 'Content Writing',
-    description: 'Synctal Solutions provides exceptional content writing services that are adapted to your unique requirements. Our talented team of writers produces excellent, compelling, and SEO-optimized content for websites, blogs, social media, and other platforms, encouraging meaningful engagement.'
+    description: 'Virtual Crafters provides exceptional content writing services that are adapted to your unique requirements. Our talented team of writers produces excellent, compelling, and SEO-optimized content for websites, blogs, social media, and other platforms, encouraging meaningful engagement.'
   },
   {
     icon: <FaSearch size={40} />,
