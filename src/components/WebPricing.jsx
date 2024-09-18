@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link'
 
 const WebPricing = () => {
   return (
@@ -8,10 +9,8 @@ const WebPricing = () => {
       <div className="container px-5 pb-8 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="text-5xl font-extrabold title-font my-4 ">Services</h1>
-          <h2 className="sm:text-4xl lg:text-4xl font-extrabold title-font mb-4 mt-5 ">Web Design & Development</h2>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.
-          </p>
+          <h2 className="text-4xl font-extrabold title-font -mb-6 mt-12 ">Web Design & Development</h2>
+         
       
         </div>
         <div className="flex flex-wrap -m-4">
@@ -63,7 +62,7 @@ const WebPricing = () => {
                 "100% Unique Design Guarantee",
                 "100% Money Back Guarantee *"
             ]}
-            buttonText="Button"
+            buttonText="Order Now"
             buttonStyle="bg-gray-800 hover:bg-gray-700"
             footerText="Literally you probably haven't heard of them jean shorts."
           />
@@ -98,7 +97,7 @@ const WebPricing = () => {
                " 100% Unique Design Guarantee",
                 "100% Money Back Guarantee *"
             ]}
-            buttonText="Button"
+            buttonText="Order Now"
             buttonStyle="bg-gray-800 hover:bg-gray-700"
             footerText="Literally you probably haven't heard of them jean shorts."
           />
@@ -136,7 +135,7 @@ const WebPricing = () => {
               "  100% Unique Design Guaranteeee",
                 "100% Money Back Guarantee *"
             ]}
-            buttonText="Button"
+            buttonText="Order Now"
             buttonStyle="bg-gray-800 hover:bg-gray-700"
             footerText="Literally you probably haven't heard of them jean shorts."
           />
@@ -178,7 +177,7 @@ const WebPricing = () => {
                " 100% Unique Design Guarantee",
                " 100% Money Back Guarantee *"
             ]}
-            buttonText="Button"
+            buttonText="Order Now"
             buttonStyle="bg-gray-800 hover:bg-gray-700"
             footerText="Literally you probably haven't heard of them jean shorts."
           />
@@ -238,7 +237,7 @@ const WebPricing = () => {
                "100% Unique Design Guarantee",
                 "100% Money Back Guarantee *"
             ]}
-            buttonText="Button"
+            buttonText="Order Now"
             buttonStyle="bg-gray-800 hover:bg-gray-700"
             footerText="Literally you probably haven't heard of them jean shorts."
           />
@@ -366,7 +365,7 @@ const WebPricing = () => {
                 "100% Unique Design Guarantee",
                 "100% Money Back Guarantee *"
             ]}
-            buttonText="Button"
+            buttonText="Order Now"
             buttonStyle="bg-gray-800 hover:bg-gray-700"
             footerText="Literally you probably haven't heard of them jean shorts."
           />
@@ -399,7 +398,7 @@ const WebPricing = () => {
                 "100% Unique Design Guarantee",
                 "100% Money Back Guarantee"
             ]}
-            buttonText="Button"
+            buttonText="Order Now"
             buttonStyle="bg-gray-800 hover:bg-gray-700"
             footerText="Literally you probably haven't heard of them jean shorts."
           />
@@ -447,7 +446,7 @@ const WebPricing = () => {
                 "100% Unique Design Guarantee",
                 "100% Money Back Guarantee *"
             ]}
-            buttonText="Button"
+            buttonText="Order Now"
             buttonStyle="bg-gray-800 hover:bg-gray-700"
             footerText="Literally you probably haven't heard of them jean shorts."
           />
@@ -556,8 +555,8 @@ const WebPricing = () => {
                             "100% Unique Design Guarantee",
                             "100% Money Back Guarantee"
             ]}
-            buttonText="Button"
-            buttonStyle="bg-gray-800 hover:bg-gray-700"
+            buttonText="Order Now"
+            buttonStyle="bg-gray-800"
             footerText="Literally you probably haven't heard of them jean shorts."
           />
           {/* Add other PricingCard components similarly */}
@@ -572,8 +571,8 @@ const PricingCard = ({ title, price, features, badge, buttonText, buttonStyle, f
   const toggleExpanded = () => setExpanded(!expanded);
 
   return (
-    <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
-      <div className={`h-full p-6 rounded-lg border-2 flex flex-col relative overflow-hidden ${badge ? "border-indigo-500" : "border-gray-700"}`}>
+    <div className="p-4 md:w-1/2 w-full">
+      <div className={`h-full p-6 rounded-lg flex flex-col relative overflow-hidden ${badge ? "border-indigo-500" : "border-gray-700"}`}>
         {badge && (
           <span className="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">{badge}</span>
         )}
@@ -605,10 +604,10 @@ const PricingCard = ({ title, price, features, badge, buttonText, buttonStyle, f
             {expanded ? 'Read Less' : 'Read More'}
           </button>
         )}
-        <button className={`flex items-center mt-auto ${buttonStyle} border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded`}>
+       <Link href="mailto:info@virtualcrafterstek.com" ><button className={`flex items-center mt-auto ${buttonStyle} border-0 py-2 px-4 w-full focus:outline-none  rounded-full`}>
           {buttonText}
-        </button>
-        <p className="text-xs text-gray-400 mt-3">{footerText}</p>
+        </button></Link>
+        {/* <p className="text-xs text-gray-400 mt-3">{footerText}</p> */}
       </div>
     </div>
   );
