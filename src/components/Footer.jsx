@@ -23,9 +23,9 @@ const Footer = () => {
         </div>
         <div>
           <h3 className="text-lg font-bold mb-4">Contact Us</h3>
-          <p className="mb-2">Email:  info@virtualcrafterstek.com</p>
+          <p className="mb-2">Email: virtualcrafterstek.com</p>
           <p className="mb-2">Phone: +1 580 215 4325</p>
-          <p className="mb-2">Address: SURREY. Province: BC. Area Code: 604.</p>
+          <p className="mb-2">Address: V3W 0E9. City: SURREY. Area Name: SURREY. Province: BC. Area Code: 604.</p>
           <div className="flex space-x-4 mt-4">
            
            
