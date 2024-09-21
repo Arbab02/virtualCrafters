@@ -17,11 +17,11 @@ export default function RootLayout({ children }) {
      <head>
      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-9509QDW1XH"></Script>
 <Script id='google-analytics'>
- { window.dataLayer = window.dataLayer || [];
+ { `window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-9509QDW1XH');
+  gtag('config', 'G-9509QDW1XH');`
  }
 </Script>
      </head>
