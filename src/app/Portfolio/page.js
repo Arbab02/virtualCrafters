@@ -1,50 +1,57 @@
-'use client'
+"use client";
 
 import { motion } from 'framer-motion';
 import { FaBullhorn, FaPencilRuler, FaSearch, FaGlobe, FaPaintBrush, FaFileAlt, FaChartLine } from 'react-icons/fa';
 
 const services = [
   {
-    icon: <FaBullhorn size={40} />,
-    title: 'Digital Marketing',
-    description: 'In order to improve your online presence and generate results, Virtual Crafters provides a full range of digital marketing services. Our knowledgeable team has expertise in content creation, social media marketing, PPC advertising, SEO, and more. We customize our services to your unique needs, assisting you in productively reaching and engaging your target audience while maximizing your online visibility and return on investment.'
+    icon: <FaBullhorn size={40} className="text-yellow-500" />,
+    title: 'Digital Marketing 🚀',
+    description: `In order to improve your online presence and generate results, Virtual Crafters provides a full range of digital marketing services. Our knowledgeable team has expertise in *content creation*, **social media marketing** 📱, **PPC advertising** 💰, SEO 🔍, and more. We customize our services to your unique needs, assisting you in productively reaching and engaging your target audience 🎯 while maximizing your online visibility 🌐 and return on investment (ROI) 🤑.`
   },
   {
-    icon: <FaPencilRuler size={40} />,
-    title: 'Animation',
-    description: 'At Virtual Crafters, our mission is to create highly effective and tailored animation plans that align with your business goals. Our expertise lies in producing captivating 2D and 3D animations that leave a lasting impression on your audience. From animating existing logos to crafting entirely new ones, our creative solutions ensure your brand stands out.'
+    icon: <FaPencilRuler size={40} className="text-purple-500" />,
+    title: 'Animation 🎥',
+    description: `At Virtual Crafters, our mission is to create highly effective and tailored animation plans that align with your business goals. Our expertise lies in producing captivating **2D** and **3D animations** 🖼️ that leave a lasting impression on your audience. From animating existing logos 🌀 to crafting entirely new ones, our creative solutions ensure your brand stands out in a competitive marketplace. Whether for ads, product showcases, or explainer videos, our animations captivate audiences and communicate your message effectively 💡.`
   },
   {
-    icon: <FaPaintBrush size={40} />,
-    title: 'Graphic Designing',
-    description: 'Virtual Crafters offers innovative graphic design solutions that elevate your brand\'s visual identity. Our creative team specializes in animated logos that truly make your company stand out. Whether it\'s a fresh logo design or an animated version of your existing one, we ensure your brand resonates with your target audience through captivating visuals.'
+    icon: <FaPaintBrush size={40} className="text-pink-500" />,
+    title: 'Graphic Designing 🎨',
+    description: `Virtual Crafters offers innovative graphic design solutions that elevate your brand's visual identity. Our creative team specializes in *animated logos* 🖌️, brochure designs 📰, and marketing materials that truly make your company stand out. Whether it's a fresh logo design 🏷️ or an animated version of your existing one, we ensure your brand resonates with your target audience 🎯 through captivating visuals. From print to digital, our designs speak your brand language and communicate your values visually 💼.`
   },
   {
-    icon: <FaFileAlt size={40} />,
-    title: 'Content Writing',
-    description: 'Virtual Crafters provides exceptional content writing services that are adapted to your unique requirements. Our talented team of writers produces excellent, compelling, and SEO-optimized content for websites, blogs, social media, and other platforms, encouraging meaningful engagement.'
+    icon: <FaFileAlt size={40} className="text-green-500" />,
+    title: 'Content Writing ✍️',
+    description: `Virtual Crafters provides exceptional content writing services 📝 that are adapted to your unique requirements. Our talented team of writers produces high-quality, compelling, and **SEO-optimized content** for *websites*, *blogs*, *social media*, and more. Whether you need engaging articles 📰, persuasive copy for product descriptions, or captivating storytelling for your brand, our content drives meaningful engagement and ensures your message resonates with your audience. We help you connect with readers and establish authority through well-crafted content.`
   },
   {
-    icon: <FaSearch size={40} />,
-    title: 'SEO',
-    description: 'To help your company move up the search engine results pages and increase organic website traffic, Synctal Solutions offers professional SEO services. We conduct in-depth keyword research, optimize on-page content, improve website structure, and create high-quality backlinks.'
+    icon: <FaSearch size={40} className="text-blue-500" />,
+    title: 'SEO Optimization 🔍',
+    description: `To help your company move up the search engine results pages 📊 and increase organic website traffic 🚦, Virtual Crafters offers professional **SEO services**. We conduct in-depth keyword research 🔑, optimize on-page content ✍️, improve website structure 🏗️, and create high-quality backlinks 🔗. Our SEO strategies are data-driven, and we ensure that your website ranks higher on search engines, driving more targeted traffic and improving your online visibility 🌍.`
   },
   {
-    icon: <FaGlobe size={40} />,
-    title: 'Web Design & Development',
-    description: 'We are your trusted partner for web design and development services. Our mission is to create visually stunning and highly functional websites that leave a lasting impact on your audience, ensuring your website stands out in today\'s competitive digital landscape.'
+    icon: <FaGlobe size={40} className="text-orange-500" />,
+    title: 'Web Design & Development 🌐',
+    description: `We are your trusted partner for *web design* and *development services*. At Virtual Crafters, we focus on creating **visually stunning** and *highly functional* websites that leave a lasting impact 💻. Our mission is to build websites that not only look great but also perform exceptionally in today’s competitive digital landscape. From e-commerce platforms 🛒 to informational websites, we ensure your site is responsive 📱, user-friendly 👥, and optimized for search engines 🔍.`
   },
   {
-    icon: <FaChartLine size={40} />,
-    title: 'UI / UX Design',
-    description: 'Our UI/UX design services focus on understanding your users\' needs and behaviors, ensuring that every interaction is intuitive and delightful. We strive to create user interfaces that look visually appealing, enhance usability, and drive conversions.'
+    icon: <FaChartLine size={40} className="text-red-500" />,
+    title: 'UI / UX Design 🖌️',
+    description: `Our UI/UX design services focus on understanding your users' needs 👥 and behaviors, ensuring that every interaction with your product is intuitive and enjoyable 🎯. We create **user interfaces** that are not only visually appealing ✨ but also enhance usability, driving engagement and conversion rates 💡. By following *user-centered design* principles, we make sure that your website or application delivers a seamless experience from start to finish 🚀.`
   }
 ];
 
 const Portfolio = () => {
   return (
     <div className="container mx-auto p-10 bg-[#000319] text-gray-400">
-      <h2 className="text-5xl font-bold text-center mb-12">Our Portfolio</h2>
+      <motion.h2 
+        className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-12 text-white"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+      💼 Our Portfolio 💼
+      </motion.h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <motion.div
@@ -55,10 +62,10 @@ const Portfolio = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{ scale: 1.05 }}
           >
-            <div className="flex justify-center mb-4 text-blue-600">
+            <div className="flex justify-center mb-4">
               {service.icon}
             </div>
-            <h3 className="text-2xl font-semibold mb-3 text-center">{service.title}</h3>
+            <h3 className="text-2xl font-semibold mb-3 text-center text-white">{service.title}</h3>
             <p className="text-gray-400 text-center">{service.description}</p>
           </motion.div>
         ))}
