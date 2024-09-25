@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link'
 import { motion } from 'framer-motion';
-import { FaCheckCircle } from 'react-icons/fa';
+// import { FaCheckCircle } from 'react-icons/fa';
 
 
 const WebPricing = () => {
@@ -35,7 +35,7 @@ const WebPricing = () => {
         <div className="flex flex-wrap -m-4">
           {/* Add your PricingCard components here with the updated code */}
           <PricingCard
-            title="Startup WEBSITE PACKAGE"
+            title="Startup Website Package"
             price="$299"
             features={[
               "📸 5 Stock Photos",
@@ -61,7 +61,7 @@ const WebPricing = () => {
             footerText="Literally you probably haven't heard of them jean shorts."
           />
           <PricingCard
-              title="Professional WEBSITE PACKAGE"
+              title="Professional Website Package"
               price="$649"
               features={[
                 "🌐 10 Page Website",
@@ -88,7 +88,7 @@ const WebPricing = () => {
             footerText="Literally you probably haven't heard of them jean shorts."
           />
           <PricingCard
-              title="Elite WEBSITE PACKAGE"
+              title="Elite Website Package"
               price="$1399"
               features={[
                 "📄 Upto 15 Unique Pages Website",
@@ -465,7 +465,7 @@ const WebPricing = () => {
             footerText="Literally you probably haven't heard of them jean shorts."
           />
           <PricingCard
-               title="Custom CRM/ERP Portal Website Package
+               title="Custom CRM/ERP Portal Website
               "
                           price="$9,999"
                           features={[
@@ -593,17 +593,14 @@ const PricingCard = ({ title, price, features, badge, buttonText, buttonStyle, f
           {badge}
         </span>
       )}
-      <h2 className="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium">
-      💻 {title} 
+      <h2 className="lg:text-2xl sm:text-3xl sm:mb-2  tracking-widest text-white title-font mb-1 font-semibold">
+        💻 {title}
       </h2>
-      <h1 className="text-5xl text-white pb-4 mb-4 border-b border-gray-800 leading-none">
-      💵 {price} 
+      <h1 className="lg:text-2xl sm:text-2xl text-white pb-4 mb-4 border-b border-gray-800 leading-none">
+        💵 {price}
       </h1>
       {features.slice(0, expanded ? features.length : 5).map((feature, index) => (
         <p key={index} className="flex items-center text-gray-400 mb-2">
-          {/* <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-            <FaCheckCircle className="w-3 h-3" />
-          </span> */}
           {feature}
         </p>
       ))}
