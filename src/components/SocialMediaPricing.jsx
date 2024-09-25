@@ -127,7 +127,7 @@ const PricingCard = ({
             {expanded ? "Read Less" : "Read More"}
           </button>
         )}
-         <Link href="mailto:info@virtualcrafterstek.com" ><button className={`flex items-center mt-auto ${buttonStyle} border-0 py-2 px-4 w-full focus:outline-none  rounded-full`}>
+         <Link href="mailto:virtualcrafterstek@gmail.com" ><button className={`flex items-center mt-auto ${buttonStyle} border-0 py-2 px-4 w-full focus:outline-none  rounded-full`}>
           {buttonText}
         </button></Link>
         {/* <p className="text-xs text-gray-400 mt-3">{footerText}</p> */}
