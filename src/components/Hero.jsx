@@ -28,7 +28,7 @@ const Hero = () => {
             business and clients. 🎯
           </p>
           <div className="flex justify-center items-center">
-            <Link href="mailto:info@virtualcrafterstek.com">
+            <Link href="mailto:virtualcrafterstek@gmail.com">
               <button className="ml-0 sm:ml-4 mb-10 sm:mb-16 inline-flex items-center text-white bg-gradient-to-r from-[#000319] to-[#2c2f59] hover:from-[#000319] hover:to-[#424574] py-2 px-6 sm:py-3 sm:px-10 focus:outline-none rounded-full text-sm sm:text-lg transform hover:scale-105 transition-all duration-300">
                 <FaEnvelopeOpenText className="mr-2 text-lg sm:text-xl animate-bounce" />
                 Free Consultation
