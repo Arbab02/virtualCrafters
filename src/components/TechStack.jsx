@@ -27,7 +27,7 @@ const TechStack = () => {
           ref={ref}  // Reference for scroll detection
           initial={{ opacity: 0, y: -50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}  // Animates when inView
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.4 }}
         >
           <h1 className="text-5xl font-bold title-font mb-4 text-gray-300">
             ⚙️ Tech Stack
@@ -43,7 +43,7 @@ const TechStack = () => {
               ref={ref}  // Reference for each element
               initial={{ opacity: 0, y: 50 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.2 * index, duration: 0.8 }}
+              transition={{ delay: 0.1 * index, duration: 0.4 }}
             >
               <motion.div
                 className="border-2 border-gray-800 px-4 py-8 rounded-lg hover:shadow-lg hover:scale-105 transform transition-all duration-300 ease-in-out hover:cursor-pointer"
