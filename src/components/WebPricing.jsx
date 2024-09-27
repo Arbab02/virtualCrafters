@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link'
 import { motion } from 'framer-motion';
-// import { FaCheckCircle } from 'react-icons/fa';
+import { FaCheckCircle } from 'react-icons/fa';
 
 
 const WebPricing = () => {
@@ -11,14 +11,7 @@ const WebPricing = () => {
     <section className="text-gray-400 bg-[#000319] body-font overflow-hidden">
       <div className="container px-5 pb-8 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
-        <motion.h1
-  className="text-4xl sm:text-5xl md:text-6xl font-bold text-white title-font my-4"
-  initial={{ opacity: 0, y: -30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5 }}
->
- ✨ Services ✨
-</motion.h1>
+        
 
 <motion.h2
   className="text-4xl font-extrabold text-white title-font -mb-6 mt-12"
@@ -26,7 +19,7 @@ const WebPricing = () => {
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.5, delay: 0.2 }}
 >
-💻 Web Design & Development 💻
+💻 Web Design & Development
 </motion.h2>
 
          
@@ -581,9 +574,11 @@ const PricingCard = ({ title, price, features, badge, buttonText, buttonStyle, f
   const toggleExpanded = () => setExpanded(!expanded);
 
   return (
-    <div className="p-4 md:w-1/2 w-full">
+    <motion.div className="p-4 md:w-1/2 w-full"
+    whileHover={{ scale: 1.05 }} 
+    >
     <motion.div
-      className={`h-full p-6 rounded-lg flex flex-col relative overflow-hidden ${badge ? "border-indigo-500" : "border-gray-700"}`}
+      className={`h-full p-6 rounded-lg flex flex-col relative overflow-hidden  hover:cursor-pointer  ${badge ? "border-indigo-500" : "border-gray-700"}`}
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
@@ -609,13 +604,13 @@ const PricingCard = ({ title, price, features, badge, buttonText, buttonStyle, f
           {expanded ? 'Read Less' : 'Read More'} 📖
         </button>
       )}
-      <Link href="mailto:virtualcrafterstek@gmail.com">
+      <Link href="mailto:info@virtualcrafterstek.com">
         <button className={`flex items-center mt-auto ${buttonStyle} border-0 py-2 px-4 w-full focus:outline-none rounded-full`}>
           {buttonText} ✉️
         </button>
       </Link>
     </motion.div>
-  </div>
+  </motion.div>
   );
 };
 
